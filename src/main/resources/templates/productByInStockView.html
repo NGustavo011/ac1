@@ -6,12 +6,13 @@
     <title>Product by in stock</title>
 </head>
 <body>
+    <h1>Product by in stock</h1>
     <table>
         <tr th:each="produto: ${produto}">
-        <td th:text="${produto.codigo}" />
-        <td th:text="${produto.nome}" />
-        <td th:text="${produto.estoque}" />
-        <td th:text="${produto.valor}" />
+        <td th:text="${produto?.codigo}" />
+        <td th:text="${produto?.nome}" />
+        <td th:text="${produto?.estoque}" />
+        <td th:text="${produto?.valor}" />
     </tr>
     </table>
 </body>
